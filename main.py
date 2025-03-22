@@ -271,7 +271,7 @@ print(process_query("What is the longest stay recorded in 2015?"))
 
 !pip install fastapi uvicorn nest_asyncio
 !pip install pyngrok
-
+!ngrok config add-authtoken 2uUa0O1g1hp8gKoKrnI7zayOgnz_4pBBaNFHnVifM3B9khP6B
 
 import nest_asyncio
 import uvicorn
