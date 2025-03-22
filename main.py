@@ -122,11 +122,11 @@ print(f"Generated {embeddings.shape[0]} embeddings with {embeddings.shape[1]} di
 
 import faiss
 
-# Define FAISS index
+
 dimension = embeddings.shape[1]
 index = faiss.IndexFlatL2(dimension)
 
-# Add embeddings to FAISS index
+
 index.add(embeddings)
 
 print(f"FAISS Index contains {index.ntotal} records.")
@@ -271,7 +271,7 @@ print(process_query("What is the longest stay recorded in 2015?"))
 
 !pip install fastapi uvicorn nest_asyncio
 !pip install pyngrok
-!ngrok config add-authtoken 2uUa0O1g1hp8gKoKrnI7zayOgnz_4pBBaNFHnVifM3B9khP6B
+
 
 import nest_asyncio
 import uvicorn
